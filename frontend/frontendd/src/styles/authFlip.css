@@ -1,0 +1,47 @@
+/* PAGE CENTER */
+.auth-page {
+  min-height: 100vh;
+  background: #f4f6f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CARD */
+.auth-card {
+  width: 420px;
+  min-height: 420px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+/* FLIP */
+.auth-card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* FRONT & BACK */
+.auth-face {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+/* BACK SIDE */
+.auth-back {
+  transform: rotateY(180deg);
+}
+
+/* SWITCH TEXT */
+.auth-switch {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.auth-switch span {
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
